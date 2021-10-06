@@ -1,5 +1,4 @@
 const lstStudent = [
-
     {
         firstName: "Vivek",
         lastName: "Oberoy",

@@ -1,0 +1,39 @@
+react commands
+
+--> To create new project. 
+https://reactjs.org/docs/create-a-new-react-app.html
+npx create-react-app my-app
+cd my-app
+npm start
+
+--> package.json
+package.json file is used by npm to install dependencies. 
+
+
+any code that returns value is called expression
+
+
+
+--> think component as functions. 
+--> functions takes some input and returns a value. 
+--> we can reuse a function anywhere by calling it. 
+
+
+--> react component is a function, It can be called. 
+--> It takes input in form of `props`. 
+--> it returns another component. 
+
+
+saperate file for each component. 
+
+--> To import anything(Variable, class, function) from one file to another
+    you need to export it from source file. 
+--> You need to use import statement like `import VariableName from './YOurFile'`
+
+
+--> React Props
+    Props is used to pass data to Component. 
+    It is similar to passing argument to function. 
+    
+    We use only single argument to access props. 
+

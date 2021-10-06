@@ -1,0 +1,22 @@
+.body {
+  background-color: #EDEDED;
+}
+
+.header {
+  display: flex;
+  background-color: grey;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding-left: 10px;
+}
+
+#link{
+  color: green;
+}
