@@ -43,14 +43,14 @@ const lstStudent = [
 ]
 
 
-function MyBody() {
+function MyBody(props) {
     const fullName = "Hamid Lohar"
     return (
         <div className="body">
             <div>
                 <a id="link" href="https://google.com">Go to google</a>
             </div>
-            <div>Welcome <b>Hamid</b></div>
+            <div>Welcome <b>{props.firstName}</b></div>
             <StudentList
                 fullName={fullName}
                 data={lstStudent}

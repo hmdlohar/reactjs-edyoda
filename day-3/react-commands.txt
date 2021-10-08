@@ -9,7 +9,7 @@ npm start
 --> package.json
 package.json file is used by npm to install dependencies. 
 
-
+--> Expression
 any code that returns value is called expression
 
 
@@ -20,7 +20,7 @@ any code that returns value is called expression
 
 
 --> react component is a function, It can be called. 
---> It takes input in form of `props`. 
+--> It takes input in form of `props`. It's like argument to function. 
 --> it returns another component. 
 
 
@@ -36,4 +36,36 @@ saperate file for each component.
     It is similar to passing argument to function. 
     
     We use only single argument to access props. 
+
+
+
+
+--> Props gives up ability to make component independent. 
+--> Component independence results into re-usebility. 
+
+
+--> Things left to explain. 
+- Working with Media Queries;
+- ES6: Named Export + Import;
+
+
+
+--> Default Export is like assignment(=) statement. 
+const a1 = "Some value";
+const a2 = a1; --> This is way of default export 
+
+const v1 = "Some value";
+export default v1;
+import v2 from './v.js' --> It's similar to assignment operation. 
+You can change name of left hand side variable. 
+
+
+--> Named Export is like Object Destructuring. 
+const obj ={a1: "value", v1:"value"}
+const {a1, v2} = obj;
+
+const a1="value";
+const v1="value";
+export {a1, v1} --> This becomes object. 
+import {a1, v2} from './filename';
 

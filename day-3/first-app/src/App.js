@@ -11,12 +11,27 @@ import MyHeader from './components/MyHeader';
 
 // Hello world.  == Children
 
+// F12 to see definition of code. 
+
 // Function Component. 
 function App() {
+
+  const fName = "Hamid"
+  const lastName = "Lohar"
+
   return (
     <div>
-      <MyHeader />
-      <MyBody />
+      <MyHeader
+        firstName="Ankit"
+        lastName={lastName}
+        gender={"Male"}
+        imgURL={"https://lh3.googleusercontent.com/ogw/ADea4I4vJe5tdO_tOUnF59qfbzIbOdvuwEosk5FdpRjPcg=s32-c-mo"}
+      />
+      <MyBody
+        firstName={fName}
+        lastName={lastName}
+        gender={"Male"}
+        imgURL={"https://lh3.googleusercontent.com/ogw/ADea4I4vJe5tdO_tOUnF59qfbzIbOdvuwEosk5FdpRjPcg=s32-c-mo"} />
     </div>
   );
 }

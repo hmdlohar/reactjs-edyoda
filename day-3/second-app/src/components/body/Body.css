@@ -1,0 +1,58 @@
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 70%;
+}
+
+.right {
+    flex-grow: 1;
+}
+
+.right-panel {
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    margin-top: 50px;
+}
+
+.link-element {
+    text-align: center;
+    padding: 5px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.grid-item {
+    padding: 5px;
+    flex: 27%;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+    .grid-item {
+        flex: 100%;
+    }
+    .grid-item img {
+        height: 200px;
+    }
+}
