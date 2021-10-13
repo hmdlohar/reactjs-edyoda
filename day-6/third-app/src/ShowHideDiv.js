@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Parent class , child class
+// Base Class , sub class
+
 class ShowHideDiv extends React.Component {
     state = {
         showDiv: true

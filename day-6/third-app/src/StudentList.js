@@ -7,9 +7,7 @@ export default class StudentList extends Component {
     }
 
     onStudentAdd = () => {
-
         console.log("i need to add one element in this.state.students", this.state.name)
-
         this.setState({ students: [...this.state.students, this.state.name] })
         this.setState({ name: '' })
     }
@@ -41,3 +39,4 @@ export default class StudentList extends Component {
 
 // Function component is stateless
 // Class component is stateful
+
