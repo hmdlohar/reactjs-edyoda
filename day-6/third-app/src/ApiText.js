@@ -6,6 +6,8 @@ export default class ApiText extends Component {
         data: null
     }
 
+
+    // When this method is called. We can perform API calls. 
     componentDidMount() {
         $.get("https://reqres.in/api/users?page=2", (result) => {
             console.log(result.data, "data")
