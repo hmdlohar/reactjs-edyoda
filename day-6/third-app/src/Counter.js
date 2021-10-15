@@ -27,7 +27,12 @@ export default class Counter extends Component {
             </div>
         )
     }
+
+    
 }
+
+// const obj = new Counter();
+// const result = obj.render()
 
 // React Converts Data into DOM
 // Async
