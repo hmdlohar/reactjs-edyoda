@@ -13,12 +13,14 @@ import NavBar from './NavBar';
 import StudentList from './student/StudentList';
 import StudentAdd from './student/StudentAdd';
 import StudentEdit from './student/StudentEdit';
+import C1 from './propType/C1';
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <BrowserRouter>
+
           <NavBar />
           <Switch>
             <Redirect to="/home" exact path="/"></Redirect>
@@ -45,6 +47,9 @@ export default class App extends Component {
             </Route>
             <Route exact path="/student/edit/:id">
               <StudentEdit />
+            </Route>
+            <Route exact path="/c1">
+              <C1 />
             </Route>
             <Route path="*">
               <div>404 Not Found</div>
