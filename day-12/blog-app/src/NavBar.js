@@ -21,6 +21,9 @@ export default function NavBar() {
                     <Link to="/student" >
                         Student
                     </Link>
+                    <Link to="/c1" >
+                        Prop type
+                    </Link>
 
                 </Nav>
             </Container>

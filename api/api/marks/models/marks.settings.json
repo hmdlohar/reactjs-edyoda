@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marks",
+  "info": {
+    "name": "Marks",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Stbject": {
+      "type": "string"
+    },
+    "marks": {
+      "type": "integer"
+    },
+    "studentID": {
+      "type": "integer"
+    }
+  }
+}

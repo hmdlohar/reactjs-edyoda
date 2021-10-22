@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 }
 
 C2.propTypes = {
-    name: PropTypes.string.isRequired
+    mobileNo: PropTypes.number.isRequired
 }
 
 export default C2;
