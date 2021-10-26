@@ -11,7 +11,8 @@ export default function Content(props) {
                 <ContentHeader2 />
             </div>
             <div>
-                <Grid places={props.places}></Grid>
+                <Grid selectedPlaces={props.selectedPlaces}
+                    onSelect={props.onSelect} places={props.places}></Grid>
             </div>
         </div>
     )

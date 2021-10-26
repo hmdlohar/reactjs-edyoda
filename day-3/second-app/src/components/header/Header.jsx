@@ -3,8 +3,9 @@ import Logo from './Logo'
 import Menu from './Menu'
 import UserInfo from './UserInfo'
 import classes from './Header.module.css'
+import { connect } from 'react-redux'
 
-export default function Header() {
+function Header(props) {
     return (
         <div className={classes.container}>
             <div>
@@ -14,10 +15,17 @@ export default function Header() {
                 <Menu></Menu>
             </div>
             <div>
-                <UserInfo></UserInfo>
+                Selected: <b>{props.counter}</b>
             </div>
+            {/* <div>
+                <UserInfo></UserInfo>
+            </div> */}
         </div>
     )
 }
 
-
+export default connect((state) => {
+    return {
+        counter: state
+    }
+})(Header)
