@@ -18,9 +18,6 @@ class App extends React.Component {
     // console.log(this.props)
     return (
       <div>
-        <button onClick={()=>{
-          this.props.increment()
-        }} >Increment</button>
         <Header selectedPlaces={this.state.selectedPlaces} />
         <Body onSelect={this.onSelect} selectedPlaces={this.state.selectedPlaces} />
       </div>
@@ -34,10 +31,10 @@ const mapStateToProps = (state) => {
   };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    increment: () => dispatch({ type: "INCREMENT" })
-  }
-}
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     increment: () => dispatch({ type: "INCREMENT" })
+//   }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

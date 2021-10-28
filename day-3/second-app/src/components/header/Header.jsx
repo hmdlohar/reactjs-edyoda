@@ -15,7 +15,7 @@ function Header(props) {
                 <Menu></Menu>
             </div>
             <div>
-                Selected: <b>{props.counter}</b>
+                Selected: <b>{props.lstCart.length}</b>
             </div>
             {/* <div>
                 <UserInfo></UserInfo>
@@ -26,6 +26,6 @@ function Header(props) {
 
 export default connect((state) => {
     return {
-        counter: state
+        lstCart: state
     }
 })(Header)

@@ -5,12 +5,13 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import { createStore, } from 'redux';
 
-const reducer = (state = 8, action) => {
-  // state = state + 1
+const initialValue = []
+
+// return a state
+const reducer = (state = initialValue, action) => {
   switch (action.type) {
-    case 'INCREMENT': return state + 1
-    case 'DECREMENT': return state - 1
-    case 'RESET': return 0
+    case 'ADD_TO_CART': return [...state, action.payload]
+    case 'REMOVE_FROM_CART': return state.filter(item => item.id !== action.payload)
     default: return state
   }
 }

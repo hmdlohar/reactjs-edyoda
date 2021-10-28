@@ -14,10 +14,12 @@ function Grid(props) {
                         title={obj.title}
                         place={obj.place}
                         id={obj.id}
-                        selectedPlaces={props.selectedPlaces}
+                        onRemove={() => {
+                            props.removeFromCart(obj.id)
+                        }}
+                        selectedPlaces={props.lstCart}
                         onSelect={() => {
-                            props.increment()
-                            // props.onSelect(obj)
+                            props.addToCart(obj)
                         }}
                     />
                 )
@@ -28,12 +30,14 @@ function Grid(props) {
 
 const mapStateToProps = (state) => {
     return {
-        counter: state
+        lstCart: state
     }
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        increment: () => dispatch({ type: "INCREMENT" })
+        addToCart: (objPlace) => dispatch({ type: "ADD_TO_CART", payload: objPlace }),
+        removeFromCart: (id) => dispatch({ type: "REMOVE_FROM_CART", payload: id }),
     }
 }
+//withRoute(Grid) // history, match, location
 export default connect(mapStateToProps, mapDispatchToProps)(Grid)
