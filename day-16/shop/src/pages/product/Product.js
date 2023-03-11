@@ -41,6 +41,13 @@ class Product extends Component {
                                     price: this.state.price,
                                     id: Date.now()
                                 })
+                                const newList = [...this.props.product.lstProduct, {
+                                    title: this.state.title,
+                                    price: this.state.price,
+                                    id: Date.now()
+                                }];
+                                console.log(newList)
+                                localStorage.lstProduct = JSON.stringify(newList)
                             }}
                         >Add</button>
                     </div>

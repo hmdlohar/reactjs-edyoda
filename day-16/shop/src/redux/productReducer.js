@@ -1,5 +1,5 @@
 const initialState = {
-    lstProduct: [],
+    lstProduct: localStorage.lstProduct ? JSON.parse(localStorage.lstProduct) : [],
     isAddingProduct: false
 }
 
